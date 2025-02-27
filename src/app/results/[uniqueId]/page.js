@@ -44,6 +44,8 @@ const ResultsPage = () => {
           device: "Desktop",
           MB: data.page_weight,
           grams: data.co2e_per_visit,
+          resourceSizeData: data.resource_size_data || [],
+          resourceCountData: data.resource_count_data || [],
         });
       }
 
