@@ -1,0 +1,238 @@
+/* Hero Section Styles */
+.hero-section {
+  padding: 60px 0;
+  background: #e0f3ff;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Center Content */
+.hero-inner {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.hero-inner h4 {
+  color: #00843d;
+  font-size: 27px;
+  margin-bottom: 12px;
+}
+
+.hero-inner h1 {
+  color: #00843d;
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/* Section containing the form */
+.section-home {
+  margin-top: 40px;
+  background: #fff;
+  max-width: 900px;
+  padding: 60px 70px;
+  border-radius: 20px;
+  box-shadow: 0 9px 17px rgba(67, 65, 79, 0.1);
+  text-align: center;
+}
+
+/* Section Heading */
+.section-home h3 {
+  color: #00843d;
+  font-size: 28px;
+  margin-right: 80px;
+  margin-bottom: 20px;
+}
+
+/* Form Container */
+.section-home form {
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Form Inputs */
+.section-home .MuiTextField-root {
+  font-size: 16px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+/* Submit Button */
+.section-home .MuiButton-root {
+  height: 55px;
+  background-color: #00843d;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.section-home .MuiButton-root:hover {
+  background-color: #007233;
+}
+
+.section-home .MuiButton-root:disabled {
+  background-color: #6c6c6c;
+  cursor: not-allowed;
+}
+
+/* Loading and Results */
+.section-home p {
+  max-width: 550px;
+  margin: 25px 0 0;
+  line-height:17px;
+  font-size: 13px;
+ 
+}
+
+/* Results Section */
+.results {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.results h3 {
+  margin-bottom: 10px;
+}
+
+.results p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.results a {
+  color: #00843d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.results a:hover {
+  text-decoration: underline;
+}
+/* -------------------------------------------------------------- */
+/* Linear progress bar styling */
+.section-home .MuiLinearProgress-root {
+  margin-top: 20px;
+}
+
+/* SVG Background */
+.hero-section svg {
+  transform: rotate(180deg);
+  position: relative;
+  bottom: -65px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .hero-inner h1 {
+    font-size: 52px;
+  }
+
+  .section-home {
+    padding: 50px;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-inner h1 {
+    font-size: 44px;
+  }
+
+  .section-home {
+    padding: 40px;
+  }
+
+  .section-home h3 {
+    font-size: 24px;
+  }
+
+  .section-home .MuiButton-root {
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-inner h1 {
+    font-size: 36px;
+  }
+
+  .section-home {
+    padding: 30px;
+  }
+
+  .section-home .MuiButton-root {
+    height: 48px;
+  }
+}
+
+/* Results Page Styling */
+.results-container {
+  max-width: 100%;
+  margin: 50px auto;
+  padding: 30px;
+  background: #bde3ee;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.results-container h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #00843d;
+  margin-bottom: 20px;
+}
+
+.results-container p {
+  font-size: 20px;
+  color: #444;
+  margin: 12px 0;
+}
+
+.results-container strong {
+  color: #222;
+}
+
+/* Charts Section */
+.charts-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* Background Styling */
+.results-background {
+  background: linear-gradient(135deg, #cbdde9, #d2f5e3);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+
+.results-background::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("/background-pattern.svg") repeat;
+  opacity: 0.1;
+  z-index: 1;
+}
+
