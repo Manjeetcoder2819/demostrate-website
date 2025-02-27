@@ -100,7 +100,9 @@ const { error } = await supabase.from("client").insert([
     co2e_per_visit: co2ePerVisit,
     email,
     device: "desktop",
-    unique_url: `/results/${uniqueId}`, // Keeping unique URL if needed
+    unique_url: `/results/${uniqueId}`,
+    resource_size_data: formattedSizeData, // ✅ Store directly as JSONB
+    resource_count_data: formattedCountData, // ✅ Store directly as JSONB // Keeping unique URL if needed
   },
 ]);
 
@@ -175,3 +177,4 @@ if (error) throw new Error(`Supabase Insert Error: ${error.message}`);
 };
 
 export default HeroSection;
+
